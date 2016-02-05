@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Project 1</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="instructions">
+			<h1>Digit Memorization</h1>
+			<p><b>Instructions: </b>Each number will pop up for some seconds. It will then disappear. you will then type in the number you saw to gain scores. 10 points per guess.</p>
+		</div>
+
+		<!-- First row *start button* *scoreboard* *Turns -->
+		<div class="row"> 
+
+			<div class ="col-md-4">
+				<button id="startButton" type="button" autofocus="true" class="btn btn-success"> Start </button>
+			</div>
+			
+			<div class ="col-md-4">	
+				<div id="turns">
+					
+						<p id="classLi" class="turnli">Turn : </p>
+					
+				</div>
+			</div>
+
+			<div class ="col-md-4">
+				<div id="scores">
+					
+						<p id="p1" class="scoreli">Player : </p>
+				
+				</div>
+			</div>
+
+		</div>	
+		<!-- Second row *Correct Or Wrong*-->
+		<div id ="secondRow" class="row">
+
+			<div class ="col-md-12">
+				<div id="rightWrong"></div>
+					<ul>
+					<li id="rightWrongLi"> </li>
+					</ul>
+					
+			</div>	
+
+		</div>
+
+		<!-- Third Row  *NUMBERS*-->
+		<div id="numberRow" class="row">
+			<div id="numbersDiv">
+				<p id="numbers"> </p>
+			</div>
+		</div>
+
+		<!-- Fourth row *Answer row* -->
+		<div id="answerRow" class="row">
+			<!-- create an input where user will type in numbers -->
+			<form id="enterForm">
+				<input id="userAnswer" type="text" autofocus="true" placeholder="Enter your answer">
+				<input id="enterFormSubmit" type="submit" value="Enter">
+				</form>
+
+			
+		</div>
+
+
+	</body>
+</html>

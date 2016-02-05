@@ -1,0 +1,105 @@
+/*stylesheet and lay out for project 1*/
+ul, li {
+	list-style-type: none;
+}
+
+body {
+	font-size: 21px;
+	background-color: #A09999;
+	background-image: url('background.jpg');
+	font-family: 'Indie Flower', cursive;
+	color:white;
+
+}
+#numbersDiv{
+	list-style-type: none;
+	font-size: 4em;
+	padding-left: 1em;
+	text-align: center;
+	
+}
+
+#numberRow{
+	height: 150px;
+}
+
+.row {
+	text-align: center;
+	padding-top:10px;
+	font-family: 'Roboto Slab', serif;
+}
+
+#classLi {
+	font-size:2em;
+}
+
+#p1 {
+	font-size:35px;
+}
+
+
+.instructions {
+	text-align: center;
+	width:400px;
+	margin:0 auto;
+	clear:both;
+}
+
+h1 {
+	font-size:45px;
+}
+
+#startButton {
+	height:50px;
+	width:85px;
+	/*margin:60px;*/
+	position: relative;
+	left: 50px;
+	font-size: 25px;
+	top:10px;
+}
+
+.scoreli {
+	font-size:20px;
+	/*margin:30px;*/
+}
+
+.turnli {
+	font-size: 20px;
+	/*margin:55px;*/
+
+}
+
+#userAnswer {
+	margin:0 auto;
+	height:100px;
+	width:200px;
+	text-align: center;
+	color:black;
+	background-color: transparent;
+	border-color:transparent;
+}
+
+:focus {
+outline: 0;
+}
+
+#answerRow {
+	text-align: center;
+	height:150px;
+		
+	
+}
+
+#secondRow {
+	height:150px;
+}
+
+#enterForm {
+	position: relative;
+	top: 40px;
+
+}
+
+
+
