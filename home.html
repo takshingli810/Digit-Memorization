@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Project 1</title>
 
@@ -12,40 +11,42 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 		<script src="app.js"></script>
 		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
-		
+
 		<div class="instructions">
 			<h1>Digit Memorization</h1>
-			<p><b>Instructions: </b>Each number will pop up for some seconds. It will then disappear. you will then type in the number you saw to gain scores. 10 points per guess.</p>
+			<p><b>Instructions: </b>Each number will pop up for some seconds.
+				 It will then disappear. you will then type in the number you saw to gain scores. 10 points per guess.</p>
 		</div>
 
 		<!-- First row *start button* *scoreboard* *Turns -->
-		<div class="row"> 
+		<div class="row">
 
 			<div class ="col-md-4">
 				<button id="startButton" type="button" autofocus="true" class="btn btn-success"> Start </button>
 			</div>
-			
-			<div class ="col-md-4">	
+
+			<div class ="col-md-4">
 				<div id="turns">
-					
+
 						<p id="classLi" class="turnli">Turn : </p>
-					
+
 				</div>
 			</div>
 
 			<div class ="col-md-4">
 				<div id="scores">
-					
-						<p id="p1" class="scoreli">Player : </p>
-				
+
+						<p id="player" class="scoreli">Player : </p>
+
 				</div>
 			</div>
 
-		</div>	
+		</div>
 		<!-- Second row *Correct Or Wrong*-->
 		<div id ="secondRow" class="row">
 
@@ -54,8 +55,8 @@
 					<ul>
 					<li id="rightWrongLi"> </li>
 					</ul>
-					
-			</div>	
+
+			</div>
 
 		</div>
 
@@ -70,11 +71,11 @@
 		<div id="answerRow" class="row">
 			<!-- create an input where user will type in numbers -->
 			<form id="enterForm">
-				<input id="userAnswer" type="text" autofocus="true" placeholder="Enter your answer">
+				<input id="userAnswer" type="text" autofocus="true" placeholder="Enter here!">
 				<input id="enterFormSubmit" type="submit" value="Enter">
 				</form>
 
-			
+
 		</div>
 
 

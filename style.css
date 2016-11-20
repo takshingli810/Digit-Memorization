@@ -5,18 +5,16 @@ ul, li {
 
 body {
 	font-size: 21px;
-	background-color: #A09999;
-	background-image: url('background.jpg');
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('background.jpg');
 	font-family: 'Indie Flower', cursive;
 	color:white;
-
 }
+
 #numbersDiv{
 	list-style-type: none;
 	font-size: 4em;
 	padding-left: 1em;
 	text-align: center;
-	
 }
 
 #numberRow{
@@ -33,10 +31,9 @@ body {
 	font-size:2em;
 }
 
-#p1 {
+#player {
 	font-size:35px;
 }
-
 
 .instructions {
 	text-align: center;
@@ -87,8 +84,6 @@ outline: 0;
 #answerRow {
 	text-align: center;
 	height:150px;
-		
-	
 }
 
 #secondRow {
@@ -100,6 +95,3 @@ outline: 0;
 	top: 40px;
 
 }
-
-
-
