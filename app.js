@@ -17,11 +17,10 @@ $(function(){
 	console.log("ready")
 
 	//calling function
-	clickStart(); //everything starts from here. 
-
+	startGame(); //everything starts from here.
 
 	// Clicking Start
-	function clickStart() {
+	function startGame() {
 		$("#startButton").click(function(){
 			numberString = '';
 			$("#player").html("Player : " + scores); //displays player score
@@ -55,27 +54,28 @@ $(function(){
 	$("#enterForm").on("submit", function(e){
 		e.preventDefault();
 		console.log($("#userAnswer").val()); //error checking
-		if ($("#userAnswer").val() === "" || $("#userAnswer").val() === null || $("#userAnswer").val() === undefined) {
+		if ($("#userAnswer").val() === "" || $("#userAnswer").val() === null || $("#userAnswer").val() === undefined || $("#userAnswer").val() === NaN) {
 			alert('enter value');
 		}
 		else
 		{
 			var userAnswer = $(e.target).find("#userAnswer").val();
-		}
 			compareAnswer(userAnswer);
 			clearForm();
+		}
 	});
 
 		// clear form
 	function clearForm() {
 		$("#userAnswer").val('');
-		$("#numbers").html('Please press Start!');
+		$("#numbers").html('Please press Start again!');
 	}
 
 	function compareAnswer(userAnswer){
 		if (userAnswer == numberString) {
 			$("#rightWrongLi").append("<h1>Correct Answer</h1>");
-			scores = scores + 10;
+			scores = scores + 1;
+			digitCount += 1;
 			console.log(scores)
 				setTimeout(function (){
 					$("#rightWrongLi").html("");
@@ -83,6 +83,8 @@ $(function(){
 		}
 		else if (userAnswer != numberString){
 			$("#rightWrongLi").append("<h1>Wrong Answer</h1>");
+			scores = scores - 1;
+			digitCount -= 1;
 			setTimeout(function (){
 					$("#rightWrongLi").html("");
 				},1000);
@@ -94,6 +96,5 @@ $(function(){
 	 function incrementTurns() {
 		console.log("compare answer called");
 		turns += 1;
-		digitCount +=1;
 	 }
 	});
